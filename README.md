@@ -1,5 +1,18 @@
 ## Funcionalidades
 
+### Serviço
+-Fornecer um banco de dados para a academia 'Fitness' para mais facilmente lidar com seus clientes
+
+### Publico Alvo
+-Todos aqueles que frequentam a academia 'Fitness'
+
+### Informações
+-Linguagem PHP
+-SGBD utilizado será MySQL
+
+### Problema
+-A Academia 'Fitness' está chegando perto de seu centésimo cliente, e para facilitar o treino 
+
 ### Usuários
 - Gerenciamento
 - Página pessoal de progresso (atualização feita via painel admin)
