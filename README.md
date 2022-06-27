@@ -21,16 +21,21 @@ Com os dados dos usuários portados para o banco de dados, não será mais neces
 ## Usuários
 
 - Gerenciamento (adição, exclusão, atualização)
-- Página pessoal de progresso (atualização feita via painel admin)
+- Nome, CPF, data de nascimento, endereço, número de telefone (1)
 - Lista de equipamentos utilizados atualmente / contagem de número de vezes utilizado no exercício
 - Número ou versão da lista à ser atualizada
 - Status atual (frequentando, não frequentando)
+- Data de início
+- Data de saída
 - Mensalidade
 - Atraso no pagamento (sim, não) [se sim, não está habilitado à ir]
 
 ## Funcionários
 
 - Gerenciamento (adição, exclusão, atualização)
+- Nome, CPF, data de nascimento, endereço, número de telefone (1)
+- Data de início
+- Data de saída
 - Salário
 - Horário de trabalho
 - Status atual (ativo, não ativo)
@@ -38,5 +43,6 @@ Com os dados dos usuários portados para o banco de dados, não será mais neces
 ## Equipamento
 
 - Gerenciamento (adição, exclusão, atualização)
+- Data de aquisição
 - Usuários utilizando atualmente
 - Status atual (funcional, não funcional)
