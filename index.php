@@ -31,7 +31,7 @@
           echo "<tr>";
           echo "<td>" . $coluna['nome'] . "</td>";
           echo "<td>";
-          echo "<button type=\"button\" onclick=\"location.href='aluno/editar.php?id=" . $coluna['id'] . "'\">Editar</button>";
+          echo "<button type=\"button\" onclick=\"location.href='usuario/editar.php?id=" . $coluna['id'] . "'\">Editar</button>";
           echo "<button type=\"button\" onclick=\"location.href='usuario/excluir.php?id=" . $coluna['id'] . "'\">Excluir</button>";
           echo "</td>";
           echo "</tr>";

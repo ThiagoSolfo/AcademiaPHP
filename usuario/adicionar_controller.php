@@ -6,8 +6,6 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="../favicon.ico">
-   <script src="../js/jquery.inputmask.min.js"></script>
-   <script src="../js/jquery-3.6.0.min.js"></script>
    <title>Academia Fitness</title>
  </head>
 
@@ -60,9 +58,9 @@
 
       # Envia os dados com $conexao->query($sql) e também verifica se foi enviado com o == true (debug)
       if ($conexao->query($sql) == true) {
-        echo "<p style='color: green'>Usuário adicionado!</p>";
+        echo "<h2 style='color: green'>Usuário adicionado!</h2>";
       } else {
-        echo "<p style='color: red'>Erro ao adicionar o usuário, tente novamente.</p>";
+        echo "<h2 style='color: red'>Erro ao adicionar o usuário, tente novamente.</h2>";
       }
       $conexao->close();
     }

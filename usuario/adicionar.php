@@ -8,7 +8,7 @@
    <link rel="shortcut icon" href="../favicon.ico">
    <script src="../js/jquery.inputmask.min.js"></script>
    <script src="../js/jquery-3.6.0.min.js"></script>
-   <title>Academia Fitness</title>
+   <title>Adicionar Usuário | Academia Fitness</title>
  </head>
 
  <body>
