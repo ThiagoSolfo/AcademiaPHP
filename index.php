@@ -16,7 +16,7 @@
     // Nome do usuário do servidor
     $username = "root";
     // Senha do usuário do servidor
-    $password = "password";
+    $password = "Edu@291001";
     // Nome do banco de dados à ser usado
     $bd = "fitness";
 
