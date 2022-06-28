@@ -1,4 +1,4 @@
-# <p align="center">Academia Fiteness [PHP & MySQL]</p>
+# <center>Academia Fiteness [PHP & MySQL]</center>
 
 ## Escopo
 
@@ -16,41 +16,23 @@ Criação de um banco de dados onde os funcionários poderão gerenciar os usuá
 
 Com os dados dos usuários portados para o banco de dados, não será mais necessário tomar o tempo dos funcionários para criar, atualizar, e trocar de fichas de treino como também procurar pelos dados de inscrição.
 
-# <p align="center">Funcionalidades</p>
+# <center>Funcionalidades</center>
 
-## Usuários
+<center>
 
-- id (PK)
-- Nome
-- E-mail
-- Endereço
-- Telefone (1)
-- Versão da lista de equipamentos
-- Data de início
-- Data de término
-- Data de nascimento
-- Mensalidade
-- Atraso no pagamento (sim, não)
-- Status (ativo, inativo)
+| <font size="4">Usuários</font>  | <font size="4">Funcionários</font> |  <font size="4">Equipamento</font>  |
+| :-----------------------------: | :--------------------------------: | :---------------------------------: |
+|             id [PK]             |              id [PK]               |               id [PK]               |
+|              Nome               |                Nome                |                Nome                 |
+|           E-mail (1)            |             E-mail (1)             |          Data de aquisição          |
+|          Endereço (1)           |            Endereço (1)            | Usuários utilizando atualmente [FK] |
+|          Telefone (1)           |            Telefone (1)            |       Status (ativo, inativo)       |
+| Versão da lista de equipamentos |                CPF                 |
+|         Data de início          |           Data de início           |
+|         Data de término         |          Data de término           |
+|       Data de nascimento        |         Data de nascimento         |
+|           Mensalidade           |              Salário               |
+| Atraso no pagamento (sim, não)  |      Status (ativo, inativo)       |
+|     Status (ativo, inativo)     |
 
-## Funcionários
-
-- id (PK)
-- Nome
-- E-mail
-- Endereço
-- Telefone (1)
-- CPF
-- Data de início
-- Data de término
-- Data de nascimento
-- Salário
-- Status (ativo, inativo)
-
-## Equipamento
-
-- id (PK)
-- Nome do equipamento
-- Data de aquisição
-- Usuários utilizando atualmente (FK)
-- Status atual (funcional, não funcional)
+</center>
