@@ -1,4 +1,4 @@
-# <center>Academia Fiteness [PHP & MySQL]</center>
+# <div align="center">Academia Fiteness [PHP & MySQL]</div>
 
 ## Escopo
 
@@ -16,9 +16,9 @@ Criação de um banco de dados onde os funcionários poderão gerenciar os usuá
 
 Com os dados dos usuários portados para o banco de dados, não será mais necessário tomar o tempo dos funcionários para criar, atualizar, e trocar de fichas de treino como também procurar pelos dados de inscrição.
 
-# <center>Funcionalidades</center>
+# <div align="center">Funcionalidades</div>
 
-<center>
+<div align="center">
 
 | <font size="4">Usuários</font>  | <font size="4">Funcionários</font> |  <font size="4">Equipamento</font>  |
 | :-----------------------------: | :--------------------------------: | :---------------------------------: |
@@ -35,4 +35,4 @@ Com os dados dos usuários portados para o banco de dados, não será mais neces
 | Atraso no pagamento (sim, não)  |      Status (ativo, inativo)       |
 |     Status (ativo, inativo)     |
 
-</center>
+</div>
