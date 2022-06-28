@@ -13,10 +13,14 @@
  <body>
 
    <?php include('config.php'); ?>
-   <header>
-     <img src="favicon.ico">
-     <h1>Academia Fitness</h1>
-     <img src="favicon.ico">
+   <marquee behavior="alternate" direction="down" width="100%" height="100%">
+     <marquee behavior="alternate" direction="left" width="100%">
+       <header>
+         <img src="favicon.ico">
+         <h1>Academia Fitness</h1>
+         <img src="favicon.ico">
+     </marquee>
+   </marquee>
    </header>
    <hr>
    <div class="usuario tabela">

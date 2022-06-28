@@ -29,7 +29,7 @@
      <input type="number" name="telefone" id="telefone" required maxlength="13" />
 
      <label for="cpf">CPF*</label>
-     <input type="number" name="cpf" id="cpf" required required maxlength="9" />
+     <input type="number" name="cpf" id="cpf" required required maxlength="8" />
 
      <label for="data_inicio">Data de início*</label>
      <input type="date" name="data_inicio" id="data_inicio" required />

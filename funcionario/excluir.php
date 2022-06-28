@@ -20,9 +20,9 @@
     $id = $_GET['id'];
     $sql = "DELETE FROM funcionario WHERE id = $id;";
     if ($conexao->query($sql) == true) {
-      echo "Funcionário excluído";
+      echo "<h2 style='color: green'>Funcionário excluído</h2>";
     } else {
-      echo "Erro ao excluir o funcionário.";
+      echo "<h2 style='color: red'>Erro ao excluir o funcionário</h2>.";
     }
     $conexao->close();
   }

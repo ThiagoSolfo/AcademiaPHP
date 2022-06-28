@@ -26,6 +26,10 @@ td {
   padding: 7px;
 }
 
+header {
+  height: 200px;
+}
+
 header * {
   display: inline-block;
 }
