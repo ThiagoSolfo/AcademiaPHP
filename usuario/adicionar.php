@@ -9,7 +9,7 @@
    <script src="../js/jquery.inputmask.min.js"></script>
    <script src="../js/jquery-3.6.0.min.js"></script>
    <link rel="stylesheet" href="../css/style.css">
-   <title>Adicionar Usuário | Academia Fitness</title>
+   <title>Adicionar usuário | Academia Fitness</title>
  </head>
 
  <body>

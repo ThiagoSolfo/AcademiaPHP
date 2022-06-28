@@ -20,13 +20,13 @@ Com os dados dos usuários portados para o banco de dados, não será mais neces
 
 <div align="center">
 
-| <font size="4">Usuários</font>  | <font size="4">Funcionários</font> |  <font size="4">Equipamento</font>  |
-| :-----------------------------: | :--------------------------------: | :---------------------------------: |
-|             id [PK]             |              id [PK]               |               id [PK]               |
-|              Nome               |                Nome                |                Nome                 |
-|           E-mail (1)            |             E-mail (1)             |          Data de aquisição          |
-|          Endereço (1)           |            Endereço (1)            | Usuários utilizando atualmente [FK] |
-|          Telefone (1)           |            Telefone (1)            |       Status (ativo, inativo)       |
+| <font size="4">Usuários</font>  | <font size="4">Funcionários</font> |     <font size="4">Equipamento</font>     |
+| :-----------------------------: | :--------------------------------: | :---------------------------------------: |
+|             id [PK]             |              id [PK]               |                  id [PK]                  |
+|              Nome               |                Nome                |                   Nome                    |
+|           E-mail (1)            |             E-mail (1)             |             Data de aquisição             |
+|          Endereço (1)           |            Endereço (1)            | Usuários utilizando atualmente [FK] [WIP] |
+|          Telefone (1)           |            Telefone (1)            |          Status (ativo, inativo)          |
 | Versão da lista de equipamentos |                CPF                 |
 |         Data de início          |           Data de início           |
 |         Data de término         |          Data de término           |
@@ -36,3 +36,7 @@ Com os dados dos usuários portados para o banco de dados, não será mais neces
 |     Status (ativo, inativo)     |
 
 </div>
+
+## Rascunhos e ideias
+
+- Preço dos equipamentos

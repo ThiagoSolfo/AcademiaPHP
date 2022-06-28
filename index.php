@@ -19,9 +19,9 @@
      <img src="favicon.ico">
    </header>
    <hr>
-   <div class="usuario">
+   <div class="usuario tabela">
      <h3>Adicionar usuário</h3>
-     <button onclick="location.href='usuario/adicionar.php'">Adiconar</button>
+     <button class="adicionar" type="button" onclick="location.href='usuario/adicionar.php'">Adicionar</button>
      <br /><br />
      <table border="1px">
        <tr>
@@ -44,9 +44,9 @@
         ?>
      </table>
    </div>
-   <div class="funcionario">
+   <div class="funcionario tabela">
      <h3>Adicionar funcionário</h3>
-     <button onclick="location.href='funcionario/adicionar.php'">Adiconar</button>
+     <button class="adicionar" type="button" onclick="location.href='funcionario/adicionar.php'">Adicionar</button>
      <br /><br />
      <table border="1px">
        <tr>
@@ -62,6 +62,31 @@
             echo "<td>";
             echo "<button type=\"button\" onclick=\"location.href='funcionario/editar.php?id=" . $coluna['id'] . "'\">Editar</button>";
             echo "<button type=\"button\" onclick=\"location.href='funcionario/excluir.php?id=" . $coluna['id'] . "'\">Excluir</button>";
+            echo "</td>";
+            echo "</tr>";
+          }
+        }
+        ?>
+     </table>
+   </div>
+   <div class="equipamento tabela">
+     <h3>Adicionar equipamento</h3>
+     <button class="adicionar" type="button" onclick="location.href='equipamento/adicionar.php'">Adicionar</button>
+     <br /><br />
+     <table border="1px">
+       <tr>
+         <th>Nome</th>
+         <th>Opções</th>
+       </tr>
+       <?php
+        $sql = "SELECT id, nome FROM equipamento ORDER BY nome;";
+        if ($resultado = $conexao->query($sql)) {
+          while ($coluna = $resultado->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $coluna['nome'] . "</td>";
+            echo "<td>";
+            echo "<button type=\"button\" onclick=\"location.href='equipamento/editar.php?id=" . $coluna['id'] . "'\">Editar</button>";
+            echo "<button type=\"button\" onclick=\"location.href='equipamento/excluir.php?id=" . $coluna['id'] . "'\">Excluir</button>";
             echo "</td>";
             echo "</tr>";
           }

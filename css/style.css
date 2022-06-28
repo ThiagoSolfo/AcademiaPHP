@@ -7,10 +7,23 @@ table {
   margin: auto;
 }
 
-.usuario,
-.funcionario {
+.tabela {
   display: inline-block;
   margin: 0 5px;
+}
+
+.tabela button {
+  margin: 0 5px;
+}
+
+.adicionar {
+  padding: 3px;
+  width: 50%;
+  margin: 0 !important;
+}
+
+td {
+  padding: 7px;
 }
 
 header * {
@@ -31,7 +44,7 @@ input:not(input[type="checkbox"]) {
 }
 
 form {
-  width: 400px;
+  width: 500px;
   text-align: left;
   margin: auto;
 }

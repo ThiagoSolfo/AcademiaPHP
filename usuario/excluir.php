@@ -15,14 +15,14 @@
     include('../config.php');
 
     if (!isset($_GET['id'])) {
-      echo "usuário não encontrado para exclusão";
+      echo "Usuário não encontrado para exclusão";
     } else {
       $id = $_GET['id'];
       $sql = "DELETE FROM usuario WHERE id = $id;";
       if ($conexao->query($sql) == true) {
-        echo "Usuário excluído";
+        echo "<h2 style='color: green'>Usuário excluído</h2>";
       } else {
-        echo "Erro ao excluir o usuário.";
+        echo "<h2 style='color: red'>Erro ao excluir o usuário.</h2>";
       }
       $conexao->close();
     }

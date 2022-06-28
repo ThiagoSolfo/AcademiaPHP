@@ -33,11 +33,7 @@ ativo BOOLEAN
 
 CREATE TABLE equipamento(
 id INT PRIMARY KEY AUTO_INCREMENT,
-equipamento VARCHAR(60),
-data_aquisicao DATETIME,
+nome VARCHAR(60),
+data_aquisicao DATE,
 ativo BOOLEAN
 );
-
-SELECT *  from usuario;
-
-insert into usuario (mensalidade) values (1223.12)
