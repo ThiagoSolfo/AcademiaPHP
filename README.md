@@ -1,4 +1,16 @@
-# <p align="center">Academia Fiteness [PHP & MySQL]</p>
+# <div align="center">Academia Fiteness [PHP & MySQL]</div>
+
+## Setup
+
+- [Baixe a versão PHP Non Thread Safe(NTS)](https://www.php.net/downloads).
+- Extraia na raiz “C:”.
+- Adicionar a pasta extraída nas Variáveis de Ambiente de **sistema** (PATH C:\php).
+- Configure o arquivo “hosts" em (C:\Windows\System32\drivers\etc) para apontar o nome localhost para 127.0.0.1. Basta remover o comentário.
+- Na pasta do PHP, renomeie o arquivo “php.ini-development” para somente “php.ini”.
+- Descomente as extensões `extension=cur`, `extension=fileinfo`, `extension=gd`, `extension=intl`, `extension=imap`, `extension=mbstring`, `extension=exif`, `extension=mysqli`, `extension=openssl` e `extension=pdo_mysql`.
+- Teste PHP no cmd com o comando `php --version [-v]`
+- Inicie o servidor embutido com o comando `php -S localhost:8080` e acesse no navegador com `localhost:8080`. _Obs: inicie o cmd na pasta do projeto!_
+- **Pronto para começar!**
 
 ## Escopo
 
@@ -16,33 +28,27 @@ Criação de um banco de dados onde os funcionários poderão gerenciar os usuá
 
 Com os dados dos usuários portados para o banco de dados, não será mais necessário tomar o tempo dos funcionários para criar, atualizar, e trocar de fichas de treino como também procurar pelos dados de inscrição.
 
-# <p align="center">Funcionalidades</p>
+# <div align="center">Funcionalidades</div>
 
-## Usuários
+<div align="center">
 
-- Gerenciamento (adição, exclusão, atualização)
-- Nome, CPF, data de nascimento, endereço, número de telefone (1)
-- Lista de equipamentos utilizados atualmente / contagem de número de vezes utilizado no exercício
-- Número ou versão da lista à ser atualizada
-- Status atual (frequentando, não frequentando)
-- Data de início
-- Data de saída
-- Mensalidade
-- Atraso no pagamento (sim, não) [se sim, não está habilitado à ir]
+| <font size="4">Usuários</font>  | <font size="4">Funcionários</font> |     <font size="4">Equipamento</font>     |
+| :-----------------------------: | :--------------------------------: | :---------------------------------------: |
+|             id [PK]             |              id [PK]               |                  id [PK]                  |
+|              Nome               |                Nome                |                   Nome                    |
+|           E-mail (1)            |             E-mail (1)             |             Data de aquisição             |
+|          Endereço (1)           |            Endereço (1)            | Usuários utilizando atualmente [FK] [WIP] |
+|          Telefone (1)           |            Telefone (1)            |          Status (ativo, inativo)          |
+| Versão da lista de equipamentos |                CPF                 |
+|         Data de início          |           Data de início           |
+|         Data de término         |          Data de término           |
+|       Data de nascimento        |         Data de nascimento         |
+|           Mensalidade           |              Salário               |
+| Atraso no pagamento (sim, não)  |      Status (ativo, inativo)       |
+|     Status (ativo, inativo)     |
 
-## Funcionários
+</div>
 
-- Gerenciamento (adição, exclusão, atualização)
-- Nome, CPF, data de nascimento, endereço, número de telefone (1)
-- Data de início
-- Data de saída
-- Salário
-- Horário de trabalho
-- Status atual (ativo, não ativo)
+## Rascunhos e ideias
 
-## Equipamento
-
-- Gerenciamento (adição, exclusão, atualização)
-- Data de aquisição
-- Usuários utilizando atualmente
-- Status atual (funcional, não funcional)
+- Preço dos equipamentos
