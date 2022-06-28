@@ -20,29 +20,36 @@ Com os dados dos usuários portados para o banco de dados, não será mais neces
 
 ## Usuários
 
-- Gerenciamento (adição, exclusão, atualização)
-- Nome, CPF, data de nascimento, endereço, número de telefone (1)
-- Lista de equipamentos utilizados atualmente / contagem de número de vezes utilizado no exercício
-- Número ou versão da lista à ser atualizada
-- Status atual (frequentando, não frequentando)
+- id (PK)
+- Nome
+- E-mail
+- Endereço
+- Telefone (1)
+- Versão da lista de equipamentos
 - Data de início
-- Data de saída
+- Data de término
+- Data de nascimento
 - Mensalidade
-- Atraso no pagamento (sim, não) [se sim, não está habilitado à ir]
+- Atraso no pagamento (sim, não)
+- Status (ativo, inativo)
 
 ## Funcionários
 
-- Gerenciamento (adição, exclusão, atualização)
-- Nome, CPF, data de nascimento, endereço, número de telefone (1)
+- id (PK)
+- Nome
+- CPF
+- Endereço
+- Telefone (1)
 - Data de início
-- Data de saída
+- Data de término
+- Data de nascimento
 - Salário
-- Horário de trabalho
-- Status atual (ativo, não ativo)
+- Status (ativo, inativo)
 
 ## Equipamento
 
-- Gerenciamento (adição, exclusão, atualização)
+- id (PK)
+- Nome do equipamento
 - Data de aquisição
-- Usuários utilizando atualmente
+- Usuários utilizando atualmente (FK)
 - Status atual (funcional, não funcional)
