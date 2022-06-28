@@ -1,5 +1,17 @@
 # <div align="center">Academia Fiteness [PHP & MySQL]</div>
 
+## Setup
+
+- [Baixe a versão PHP Non Thread Safe(NTS)](https://www.php.net/downloads).
+- Extraia na raiz “C:”.
+- Adicionar a pasta extraída nas Variáveis de Ambiente de **sistema** (PATH C:\php).
+- Configure o arquivo “hosts" em (C:\Windows\System32\drivers\etc) para apontar o nome localhost para 127.0.0.1. Basta remover o comentário.
+- Na pasta do PHP, renomeie o arquivo “php.ini-development” para somente “php.ini”.
+- Descomente as extensões `extension=cur`, `extension=fileinfo`, `extension=gd`, `extension=intl`, `extension=imap`, `extension=mbstring`, `extension=exif`, `extension=mysqli`, `extension=openssl` e `extension=pdo_mysql`.
+- Teste PHP no cmd com o comando `php --version [-v]`
+- Inicie o servidor embutido com o comando `php -S localhost:8080` e acesse no navegador com `localhost:8080`. _Obs: inicie o cmd na pasta do projeto!_
+- **Pronto para começar!**
+
 ## Escopo
 
 Fornecer um banco de dados para a academia 'Fitness' para lidar mais facilmente com seus clientes com a criação de uma página web desenvolvida na linguagem PHP regido no SGBD MySQL onde os usuários serão todos aqueles que frequentam a academia 'Fitness' e pessoas às partir de 15 anos.
