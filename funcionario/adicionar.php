@@ -14,7 +14,7 @@
 
  <body>
 
-   <h2>Adicionar usuários</h2>
+   <h2>Adicionar funcionários</h2>
    <form action="adicionar_controller.php" method="post">
      <label for="nome">Nome*</label>
      <input type="text" name="nome" id="nome" required maxlength="60" />
@@ -28,8 +28,8 @@
      <label for="telefone">Telefone*</label>
      <input type="number" name="telefone" id="telefone" required maxlength="13" />
 
-     <label for="versao_lista">Número da lista*</label>
-     <input type="number" name="versao_lista" id="versao_lista" required />
+     <label for="cpf">CPF*</label>
+     <input type="number" name="cpf" id="cpf" required required maxlength="9" />
 
      <label for="data_inicio">Data de início*</label>
      <input type="date" name="data_inicio" id="data_inicio" required />
@@ -40,12 +40,8 @@
      <label for="data_nascimento">Data de nascimento*</label>
      <input type="date" name="data_nascimento" id="data_nascimento" required />
 
-     <label for="mensalidade">Mensalidade*</label>
-     <input type="text" name="mensalidade" id="mensalidade" required maxlength="6" />
-
-     <label for="atraso_pagamento">Pagamento atrasado?</label>
-     <input type="hidden" name="atraso_pagamento" id="atraso_pagamento" value="0" />
-     <input type="checkbox" name="atraso_pagamento" id="atraso_pagamento" value="1" />
+     <label for="salario">Salário*</label>
+     <input type="text" name="salario" id="salario" required maxlength="7" />
 
      <label for="ativo">Ativo?</label>
      <!-- O hidden input serve para o checkbox não enviar um valor vazio para o servidor -->

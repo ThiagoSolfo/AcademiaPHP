@@ -6,3 +6,32 @@ body {
 table {
   margin: auto;
 }
+
+.usuario,
+.funcionario {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+header * {
+  display: inline-block;
+}
+
+header img {
+  height: 25px;
+}
+
+header h1 {
+  padding: 0 20px;
+}
+
+input:not(input[type="checkbox"]) {
+  width: 100%;
+  margin-bottom: 11px;
+}
+
+form {
+  width: 400px;
+  text-align: left;
+  margin: auto;
+}

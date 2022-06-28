@@ -37,9 +37,10 @@ Com os dados dos usuários portados para o banco de dados, não será mais neces
 
 - id (PK)
 - Nome
-- CPF
+- E-mail
 - Endereço
 - Telefone (1)
+- CPF
 - Data de início
 - Data de término
 - Data de nascimento

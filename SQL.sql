@@ -20,9 +20,10 @@ ativo BOOLEAN
 CREATE TABLE funcionario(
 id INT PRIMARY KEY AUTO_INCREMENT,
 nome VARCHAR(60),
-cpf VARCHAR(9),
-endereço VARCHAR(100),
+email VARCHAR(320),
+endereco VARCHAR(100),
 telefone VARCHAR(12),
+cpf VARCHAR(9),
 data_inicio DATE,
 data_saida DATE,
 data_nascimento DATE,

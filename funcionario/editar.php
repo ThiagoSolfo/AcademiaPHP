@@ -9,7 +9,7 @@
    <script src="../js/jquery.inputmask.min.js"></script>
    <script src="../js/jquery-3.6.0.min.js"></script>
    <link rel="stylesheet" href="../css/style.css">
-   <title>Alterar Usuário | Academia Fitness</title>
+   <title>Alterar Funcionário | Academia Fitness</title>
  </head>
 
  <body>
@@ -19,20 +19,19 @@
 
     if (isset($_GET['id'])) {
       $id = $_GET['id'];
-      $sql = "SELECT nome, email, endereco, telefone, versao_lista, data_inicio, data_saida, data_nascimento, mensalidade, atraso_pagamento, ativo FROM usuario WHERE id = $id;";
+      $sql = "SELECT nome, email, endereco, telefone, cpf, data_inicio, data_saida, data_nascimento, salario, ativo FROM funcionario WHERE id = $id;";
       if ($result = $conexao->query($sql)) {
         $coluna = $result->fetch_row();
         $nome = $coluna[0];
         $email = $coluna[1];
         $endereco = $coluna[2];
         $telefone = $coluna[3];
-        $versao_lista = $coluna[4];
+        $cpf = $coluna[4];
         $data_inicio = $coluna[5];
         $data_saida = $coluna[6];
         $data_nascimento = $coluna[7];
-        $mensalidade = $coluna[8];
-        $atraso_pagamento = $coluna[9];
-        $ativo = $coluna[10];
+        $salario = $coluna[8];
+        $ativo = $coluna[9];
       }
     }
     ?>
@@ -49,8 +48,8 @@
      <label for="telefone">Telefone*</label>
      <input type="number" name="telefone" id="telefone" required value="<?php echo $telefone; ?>" maxlength="13" />
 
-     <label for="versao_lista">Número da lista*</label>
-     <input type="number" name="versao_lista" id="versao_lista" required value="<?php echo $versao_lista; ?>" />
+     <label for="cpf">CPF*</label>
+     <input type="number" name="cpf" id="cpf" required value="<?php echo $cpf; ?>" />
 
      <label for="data_inicio">Data de início*</label>
      <input type="date" name="data_inicio" id="data_inicio" required value="<?php echo $data_inicio; ?>" />
@@ -61,12 +60,8 @@
      <label for="data_nascimento">Data de nascimento*</label>
      <input type="date" name="data_nascimento" id="data_nascimento" required value="<?php echo $data_nascimento; ?>" />
 
-     <label for="mensalidade">Mensalidade*</label>
-     <input type="text" name="mensalidade" id="mensalidade" required value="<?php echo $mensalidade; ?>" maxlength="6" />
-
-     <label for="atraso_pagamento">Pagamento atrasado?</label>
-     <input type="hidden" name="atraso_pagamento" id="atraso_pagamento" value="0" />
-     <input type="checkbox" name="atraso_pagamento" id="atraso_pagamento" value="1" <?php echo ($atraso_pagamento == 1 ? 'checked' : ''); ?> />
+     <label for="salario">Salário*</label>
+     <input type="text" name="salario" id="salario" required value="<?php echo $salario; ?>" maxlength="7" />
 
      <label for="ativo">Ativo?</label>
      <!-- 
