@@ -2,7 +2,8 @@
 
 ## Setup
 
-- [Baixe a versão PHP Non Thread Safe(NTS)](https://www.php.net/downloads).
+- [Baixe a versão PHP Non Thread Safe (NTS)](https://www.php.net/downloads).
+- [Baixe e instale o Microsoft Visual C++ para Visual Studio](https://docs.microsoft.com/pt-br/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 - Extraia na raiz “C:”.
 - Adicionar a pasta extraída nas Variáveis de Ambiente de **sistema** (PATH C:\php).
 - Configure o arquivo “hosts" em (C:\Windows\System32\drivers\etc) para apontar o nome localhost para 127.0.0.1. Basta remover o comentário.
